@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZentraSecuruty</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-alert">
+  🛡️ <strong id="protected-counter">20,000</strong> accounts protected
+</header>
+
+<nav>
+  <h2>ZentraSecuruty</h2>
+</nav>
+
+<div id="chat-toggle" onclick="openChat()">💬</div>
+
+<div id="chatbox">
+  <div id="chat-header">
+    Zentra AI Scanner
+    <button onclick="closeChat()">×</button>
+  </div>
+
+  <div id="messages"></div>
+
+  <!-- NEW IMAGE UPLOAD -->
+  <input type="file" id="image-upload" accept="image/*">
+
+  <input id="user-input" placeholder="Paste message or link..." />
+  <button onclick="sendMessage()">Scan</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f9ff;
+  color: #020817;
+}
+
+header {
+  background: #020817;
+  color: white;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn, .pay-btn {
+  background: #006aff;
+  color: white;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 8% 80px;
+  background: linear-gradient(135deg, #020817, #063b82);
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  max-width: 850px;
+  margin: 0 auto 20px;
+}
+
+.subtext {
+  font-size: 19px;
+  color: #dbeafe;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.pay-btn {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.small {
+  margin-top: 14px;
+  color: #bfdbfe;
+  font-size: 14px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 70px 8%;
+}
+
+.features div {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.features h3 {
+  color: #006aff;
+  margin-bottom: 10px;
+}
+
+.features p {
+  color: #475569;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
