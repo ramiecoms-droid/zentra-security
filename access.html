@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZentraSecurity Access</title>
+</head>
+<body style="background:#020817;color:white;font-family:Arial;text-align:center;padding-top:150px;">
+  <h1>Enter Access Code</h1>
+  <p>Your code was sent to your email after checkout.</p>
+
+  <input id="code" maxlength="4" placeholder="----" style="font-size:30px;text-align:center;padding:15px;">
+  <br><br>
+  <button onclick="checkCode()" style="padding:15px 30px;background:#006aff;color:white;border:none;border-radius:8px;">
+    Continue
+  </button>
+
+  <p id="error" style="color:#ffb4b4;display:none;">Invalid code. Try again.</p>
+
+<script>
+function checkCode() {
+  if (document.getElementById("code").value.trim() === "1219") {
+    window.location.href = "scanner.html";
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
